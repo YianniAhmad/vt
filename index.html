@@ -119,10 +119,11 @@
     </div>
 
     <div class="gif-wrap" id="gifWrap" aria-live="polite">
-      <img
+      <img 
+        src="https://media.tenor.com/DpJdyKQKgYkAAAAj/cat-jump.gif"
         alt="Happy jumping cat"
-        src="https://media.tenor.com/0m5mP4c3Z9AAAAAC/cat-jump.gif"
-      />
+        />
+
       <div class="tiny">YAYYYYY 🥳</div>
     </div>
   </div>
@@ -137,21 +138,21 @@
 
     // Infinite escalation phrases for the "No" path
     const prompts = [
-      "Are you sure? 😳",
+      "Are you sure? ",
       "Are you sureeeeee? 🥺",
-      "Are you weally weally sure???? 😭",
-      "Like… 100% sure?? 🤨",
-      "Absolutely, undeniably sure??? 😤",
-      "Final answer?? 😅",
+      "Are you weally weally sure???? ",
+      "Like… 100% sure?? ",
+      "Absolutely undeniably sure??? ",
+      "Final answer??",
       "You really wanna do this to me?? 💔",
-      "Okay but… are you SURE sure sure?? 😵"
+      "Okay but baby are you SURE sure sure?? "
     ];
 
     let noCount = 0;
 
     function handleYes(){
-      titleEl.textContent = "LET'S GOOOOOOO 💖";
-      subEl.textContent = "Best decision you’ve ever made.";
+      titleEl.textContent = "YAYAYYAYYAYAYAYA. On this day or any other, you're mine forever my sweet baby girl Mwah. I love you so much bubu";
+      subEl.textContent = "THANK YOU BABYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY AYYAYAYAYYAYAAY";
       gifWrap.style.display = "block";
       btnRow.style.display = "none";
     }
@@ -166,7 +167,7 @@
         .replace("????", "?".repeat(Math.min(12, 4 + noCount)));
 
       titleEl.textContent = mutated + extra;
-      subEl.textContent = "Click yes. I dare you. 😌";
+      subEl.textContent = "Click yes. PLEASEEEEE";
 
       // Make "Yes" slowly feel more irresistible
       const scale = Math.min(1.0 + noCount * 0.06, 2.2);
